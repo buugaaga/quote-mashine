@@ -1,0 +1,22 @@
+body {
+  background: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 5s ease;
+}
+div {
+  min-height: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+#quote-box {
+  position: relative;
+  width: 500px;
+  background: green;
+}
+#buttons {
+  display: flex;
+  justify-content: space-between;
+}
