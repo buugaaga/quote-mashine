@@ -27,7 +27,7 @@ class App extends Component {
           quote: data[numQuote].quote,
           author: data[numQuote].author
         })
-      }
+      } 
       )
   } 
   newQuote = () => this.handleQuote();
