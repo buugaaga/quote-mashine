@@ -29,7 +29,7 @@ class App extends Component {
         })
       }
       )
-  }
+  } 
   newQuote = () => this.handleQuote();
   render() {
     const { quote, author } = this.state
