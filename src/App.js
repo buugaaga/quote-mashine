@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+
+import Text from './components/text/text';
+import Buttons from './components/buttons/buttons';
+
 import axios from 'axios';
 
 class App extends Component {
@@ -10,14 +14,11 @@ class App extends Component {
     }
     
   }
-
   componentDidMount() {
     this.handleQuote();
   }
-
   handleQuote() {
     let url = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
-
     axios.get(url) 
       .then(res => {
         let data = res.data.quotes;
@@ -29,19 +30,14 @@ class App extends Component {
       }
       )
   }
-
   newQuote = () => this.handleQuote();
-
   render() {
     const { quote, author } = this.state
     return (
-      <div id="quote-box">
-        <div id="text"><p>{quote}</p></div>
-        <div id="author"><p>{author}</p></div>
-        
-        <div id="buttons">
-          <a id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${quote} ${author}`} target="_blank" rel="noopener noreferrer">tweeter</a>
-          <button className="btn"id="new-quote" onClick={this.newQuote}>New quote</button>
+      <div id="wrapper">
+        <div id="quote-box">
+          <Text quote={quote} author={author} />
+          <Buttons quote={quote} author={author} handle={this.newQuote} />
         </div>
       </div>
     )
