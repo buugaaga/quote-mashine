@@ -4,8 +4,8 @@
 </a>
 
 </br > </br>
-<a href="https://buugaaga.github.io/quote-mashine/"></a>
-ccылка на приложение
+<a href="https://buugaaga.github.io/quote-mashine/">ccылка на приложение</a>
+
 <p>
   Приложение случайных цитат. Кстати может быть полезным для поддержания постоянной мотивации. Стилизовать можно под себя.
 </p>
