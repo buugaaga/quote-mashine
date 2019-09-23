@@ -35,6 +35,7 @@ class App extends Component {
     const { quote, author } = this.state
     return (
       <div id="wrapper">
+        <h1>Random Quote App</h1>
         <div id="quote-box">
           <Text quote={quote} author={author} />
           <Buttons quote={quote} author={author} handle={this.newQuote} />
